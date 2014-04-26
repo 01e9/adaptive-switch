@@ -1,8 +1,11 @@
 .adaptive-switch {
 	display: inline-block;
 	padding: 2px;
-	border-radius: 1000px;
 	line-height: 200%;
+
+	-webkit-border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	border-radius: 1000px;
 }
 
 .adaptive-switch .switch-clear {
@@ -12,7 +15,6 @@
 .adaptive-switch > .switch-inner {
 	position: relative;
 	overflow: hidden;
-	border-radius: 1000px;
 	height: 100%;
 }
 
@@ -20,20 +22,16 @@
 .adaptive-switch .switch-size {
 	position: relative;
 }
-.adaptive-switch .switch-size .switch-height {
-	width: 0;
-}
-.adaptive-switch .switch-size .switch-height,
-.adaptive-switch .switch-size .switch-width,
-.adaptive-switch .switch-size .switch-width .switch-label {
-	float: left;
-}
 .adaptive-switch .switch-size .switch-size-cover {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+
+	-webkit-border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	border-radius: 1000px;
 }
 
 .adaptive-switch img {

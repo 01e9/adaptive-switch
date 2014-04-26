@@ -3,12 +3,9 @@
 		'<div class="adaptive-switch{{wrapper_class}}">'+
 			'<div class="switch-inner">'+
 				'<div class="switch-size">'+
-					'<div class="switch-height">&nbsp;</div>'+
-					'<div class="switch-width">'+
+					'<div class="switch-size-inner">'+
 						'<div class="switch-label switch-label-left"><span>{{biggest_text}}</span></div>'+
-						'<div class="switch-clear"></div>'+
 					'</div>'+
-					'<div class="switch-clear"></div>'+
 					'<div class="switch-size-cover"></div>'+
 				'</div>'+
 				'<div class="switch-dot"><img src="{{img_src_1x1}}" /></div>'+
