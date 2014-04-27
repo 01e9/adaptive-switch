@@ -27,8 +27,8 @@
 
 .adaptive-switch label.switch-label {
 	display: block;;
-    padding: 0 2em;
-    color: #00709f;
+	padding: 0 2em;
+	color: #00709f;
 }
 .adaptive-switch label.switch-label span {
 	padding: 0 1em;
@@ -69,9 +69,9 @@
 	width: 100%;
 
 	text-align: right;
-    padding-right: 100%;
-    padding-right: calc(100% - 2em);
-    transition: padding-right 0.2s linear;
+	padding-right: 100%;
+	padding-right: calc(100% - 2em);
+	transition: padding-right 0.2s linear;
 }
 .adaptive-switch.switch-right .switch-dot {
 	padding-right: 0;
