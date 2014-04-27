@@ -3,10 +3,7 @@
 		'<div class="adaptive-switch{{wrapper_class}}">'+
 			'<div class="switch-inner">'+
 				'<div class="switch-size">'+
-					'<div class="switch-size-inner">'+
-						'<div class="switch-label switch-label-left"><span>{{biggest_text}}</span></div>'+
-					'</div>'+
-					'<div class="switch-size-cover"></div>'+
+					'<label class="switch-label switch-label-right"><span>{{biggest_text}}</span></label>'+
 				'</div>'+
 				'<div class="switch-dot"><img src="{{img_src_1x1}}" /></div>'+
 				'<div class="switch-switcher">'+
@@ -63,8 +60,13 @@
 				)
 			)
 				.attr('id', switchId)
-				.addClass('switch-checkbox')
+				.addClass('input-type--checkbox')
 				.addClass('input-id--'+ $this.attr('id'))
+				.addClass(
+					$this.attr('class')
+					? $this.attr('class').split(/\s+/).map(function(c){ return c.length ? 'input-class--'+ c : ''; }).join(' ')
+					: ''
+				)
 				.insertAfter($this);
 
 			$this

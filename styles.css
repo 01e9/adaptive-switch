@@ -1,48 +1,50 @@
 .adaptive-switch {
 	display: inline-block;
-	padding: 2px;
-	line-height: 200%;
+	white-space: nowrap;
 
-	-webkit-border-radius: 1000px;
-	-moz-border-radius: 1000px;
-	border-radius: 1000px;
+	line-height: 200%;
 }
 
 .adaptive-switch .switch-clear {
 	clear: both;
 }
 
-.adaptive-switch > .switch-inner {
+.adaptive-switch img {
+	height: 100%;
+}
+
+.adaptive-switch .switch-inner {
 	position: relative;
 	overflow: hidden;
 	height: 100%;
 }
-
-
-.adaptive-switch .switch-size {
-	position: relative;
-}
-.adaptive-switch .switch-size .switch-size-cover {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
+.adaptive-switch,
+.adaptive-switch .switch-inner {
 	-webkit-border-radius: 1000px;
 	-moz-border-radius: 1000px;
 	border-radius: 1000px;
 }
 
-.adaptive-switch img {
-	height: 100%;
+.adaptive-switch label.switch-label {
+	display: block;;
+    padding: 0 2em;
+    color: #00709f;
+}
+.adaptive-switch label.switch-label span {
+	padding: 0 1em;
+}
+.adaptive-switch label.switch-label-right {
+	padding-left: 0;
+}
+.adaptive-switch label.switch-label-left {
+	padding-right: 0;
 }
 
 .adaptive-switch .switch-switcher {
 	position: absolute;
-	width: 200%;
-	height: 100%;
 	top: 0;
+	height: 100%;
+	width: 200%;
 
 	left: -100%;
 	transition: left 0.2s linear;
@@ -50,62 +52,54 @@
 .adaptive-switch.switch-right .switch-switcher {
 	left: 0;
 }
-.adaptive-switch .switch-switcher .switch-label {
+.adaptive-switch .switch-switcher label.switch-label {
 	width: 50%;
 	height: 100%;
 	float: left;
 	text-align: center;
-	display: block;
 	cursor: pointer;
 }
 
 .adaptive-switch .switch-dot {
+	background-color: #FFF;
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 100%;
 	height: 100%;
+	width: 100%;
+
 	text-align: right;
-	transition: right 0.2s linear;
+    padding-right: 100%;
+    padding-right: calc(100% - 2em);
+    transition: padding-right 0.2s linear;
 }
 .adaptive-switch.switch-right .switch-dot {
-	right: 0 !important;
+	padding-right: 0;
 }
 .adaptive-switch .switch-dot img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
 
-.adaptive-switch .switch-switcher .switch-label {
+.adaptive-switch .switch-dot,
+.adaptive-switch .switch-switcher label.switch-label {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-/* Config size */
+/* Customize size */
 
 .adaptive-switch {
 	font-size: 11px;
 }
 
-.adaptive-switch .switch-label span {
-	padding: 0 11px;
-}
-
-.adaptive-switch .switch-dot {
-	right: calc(100% - 22px);
-}
-
-.adaptive-switch .switch-label-left {
-	padding-left: 22px;
-}
-.adaptive-switch .switch-label-right {
-	padding-right: 22px;
-}
-
-/* Config style */
+/* Customize style */
 
 .adaptive-switch {
 	border: 1px solid #ddd;
+	padding: 2px;
 	font-family: sans;
 
 	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
@@ -113,14 +107,10 @@
 	box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
 }
 
-.adaptive-switch .switch-size .switch-size-cover {
-	background-color: #FFF;
-}
-
 .adaptive-switch .switch-dot img {
 	background-color: #00709f;
 }
 
-.adaptive-switch .switch-switcher .switch-label {
+.adaptive-switch .switch-switcher label.switch-label {
 	color: #00709f;
 }
