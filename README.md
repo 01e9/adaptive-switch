@@ -11,4 +11,4 @@ To change switch size, just change `font-size`
 }
 ```
 
-[Demo](http://sourcebox.io/0274b52f66a8fe81e0f2477061f8eaa3/html)
+[Demo](http://sourcebox.io/446bc93a03f368d2f019df2b479154e9/html)
