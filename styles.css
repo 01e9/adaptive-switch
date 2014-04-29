@@ -107,7 +107,9 @@ input.adaptive-switch-input {
 	-moz-appearance: none;
 	appearance: none;
 	width: 0;
+	min-width: 0;
 	height: 0;
+	border: 0;
 }
 
 /* Customize size */
