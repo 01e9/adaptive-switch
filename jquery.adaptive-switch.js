@@ -71,10 +71,10 @@
 
 			$this
 				.attr('data-switch-id', switchId)
+				.addClass('adaptive-switch-input')
 				.on('change', function(){
 					$('#'+ $(this).attr('data-switch-id') )[ $(this).prop('checked') ? 'addClass' : 'removeClass' ]('switch-right');
-				})
-				.hide();
+				});
 		});
 
 		return this;
