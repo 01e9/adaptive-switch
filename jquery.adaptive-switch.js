@@ -64,7 +64,7 @@
 				.addClass('input-id--'+ $this.attr('id'))
 				.addClass(
 					$this.attr('class')
-					? $this.attr('class').split(/\s+/).map(function(c){ return c.length ? 'input-class--'+ c : ''; }).join(' ')
+					? $.map($this.attr('class').split(/\s+/), function(c){ return c.length ? 'input-class--'+ c : ''; }).join(' ')
 					: ''
 				)
 				.insertAfter($this);
