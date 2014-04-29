@@ -5,7 +5,7 @@
 				'<div class="switch-size">'+
 					'<label class="switch-label switch-label-right"><span>{{biggest_text}}</span></label>'+
 				'</div>'+
-				'<div class="switch-dot"><img src="{{img_src_1x1}}" /></div>'+
+				'<div class="switch-dot"><div><span></span></div></div>'+
 				'<div class="switch-switcher">'+
 					'<label for="{{id_right}}" class="switch-label switch-label-right"><span>{{switch_right}}</span></label>'+
 					'<label for="{{id_left}}"  class="switch-label switch-label-left" ><span>{{switch_left}}</span></label>'+
@@ -13,8 +13,6 @@
 				'</div>'+
 			'</div>'+
 		'</div>';
-
-	var img_src_1x1 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCB1jYAAAAAIAAc/INeUAAAAASUVORK5CYII=';
 
 	function renderTemplate(switchLeft, switchRight, isRight, inputLeftId, inputRightId) {
 		switchLeft  = String(switchLeft);
@@ -26,7 +24,6 @@
 			.split('{{biggest_text}}'   ).join(switchLeft.length > switchRight.length ? switchLeft : switchRight)
 			.split('{{id_left}}'        ).join(inputLeftId)
 			.split('{{id_right}}'       ).join(inputRightId)
-			.split('{{img_src_1x1}}'    ).join(img_src_1x1)
 			.split('{{wrapper_class}}'  ).join(isRight ? ' switch-right' : '');
 	}
 
