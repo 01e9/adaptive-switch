@@ -114,3 +114,19 @@
 .adaptive-switch .switch-switcher label.switch-label {
 	color: #00709f;
 }
+
+/* Do not make text selection when doubleclicked */
+.adaptive-switch ::-moz-selection {
+	background: transparent;
+}
+.adaptive-switch ::selection {
+	background: transparent;
+}
+
+/* Hide native checkbox in Mac */
+input.adaptive-switch-input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: none;
+}
