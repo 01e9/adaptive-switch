@@ -93,7 +93,6 @@
 	box-sizing: border-box;
 }
 
-/* Do not make text selection when double clicked */
 .adaptive-switch ::-moz-selection {
 	background: transparent;
 }
@@ -101,11 +100,26 @@
 	background: transparent;
 }
 
-/* Hide native checkbox in Mac */
 input.adaptive-switch-input {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+
+	width: 0;
+	min-width: 0;
+	height: 0;
+	min-height: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+input.adaptive-switch-input,
+input.adaptive-switch-input:before,
+input.adaptive-switch-input:checked:before,
+input.adaptive-switch-input:after,
+input.adaptive-switch-input:checked:after {
+	content: none;
+
 	width: 0;
 	min-width: 0;
 	height: 0;
