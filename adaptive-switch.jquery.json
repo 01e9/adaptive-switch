@@ -1,0 +1,36 @@
+{
+    "name": "adaptive-switch",
+    "title": "Adaptive Switch",
+    "description": "Switche (toggle) with dynamic width that adapts to font size",
+    "keywords": [
+        "switch",
+        "toggle",
+        "dynamic",
+        "adaptive"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "moldcraft",
+        "url": "https://github.com/moldcraft"
+    },
+    "maintainers": [
+        {
+            "name": "moldcraft",
+            "email": "moldcraft@email.com",
+            "url": "https://github.com/moldcraft"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "WTFPL",
+            "url": "http://www.wtfpl.net/"
+        }
+    ],
+    "bugs": "https://github.com/moldcraft/adaptive-switch/issues",
+    "homepage": "https://github.com/moldcraft/adaptive-switch",
+    "docs": "https://github.com/moldcraft/adaptive-switch",
+    "download": "https://github.com/moldcraft/adaptive-switch/releases",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
