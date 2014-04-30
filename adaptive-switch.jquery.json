@@ -1,7 +1,7 @@
 {
     "name": "adaptive-switch",
     "title": "Adaptive Switch",
-    "description": "Switche (toggle) with dynamic width that adapts to font size",
+    "description": "Switch (toggle) with dynamic width that adapts to font size",
     "keywords": [
         "switch",
         "toggle",
