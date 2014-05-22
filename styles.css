@@ -104,28 +104,28 @@ input.adaptive-switch-input {
 	-moz-appearance: none;
 	appearance: none;
 
-	width: 0;
-	min-width: 0;
-	height: 0;
-	min-height: 0;
-	border: 0;
-	margin: 0;
-	padding: 0;
+	width: 0 !important;
+	min-width: 0 !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 input.adaptive-switch-input,
 input.adaptive-switch-input:before,
 input.adaptive-switch-input:checked:before,
 input.adaptive-switch-input:after,
 input.adaptive-switch-input:checked:after {
-	content: none;
+	content: none !important;
 
-	width: 0;
-	min-width: 0;
-	height: 0;
-	min-height: 0;
-	border: 0;
-	margin: 0;
-	padding: 0;
+	width: 0 !important;
+	min-width: 0 !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	border: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 /* Customize */
