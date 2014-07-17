@@ -118,6 +118,7 @@ input.adaptive-switch-input:checked:before,
 input.adaptive-switch-input:after,
 input.adaptive-switch-input:checked:after {
 	content: none !important;
+	visibility: hidden;
 
 	width: 0 !important;
 	min-width: 0 !important;
