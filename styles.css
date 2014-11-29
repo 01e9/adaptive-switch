@@ -13,12 +13,6 @@
 	overflow: hidden;
 	height: 2em;
 }
-.adaptive-switch,
-.adaptive-switch .switch-inner {
-	-webkit-border-radius: 1000px;
-	-moz-border-radius: 1000px;
-	border-radius: 1000px;
-}
 
 .adaptive-switch label.switch-label {
 	display: block;;
@@ -83,16 +77,23 @@
 }
 
 .adaptive-switch .switch-dot,
-.adaptive-switch .switch-dot div span {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-}
-.adaptive-switch .switch-dot,
 .adaptive-switch .switch-switcher label.switch-label {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.adaptive-switch,
+.adaptive-switch .switch-inner,
+.adaptive-switch .switch-dot {
+	-webkit-border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	border-radius: 1000px;
+}
+.adaptive-switch .switch-dot div span {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 
 .adaptive-switch ::-moz-selection {
