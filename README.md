@@ -13,5 +13,5 @@ To change switch size, just change `font-size`
 
 IE8+
 
-[Demo](http://htmlpreview.github.io/?https://github.com/moldcraft/adaptive-switch/blob/master/demo.html)
+[Demo](http://htmlpreview.github.io/?https://github.com/01e9/adaptive-switch/blob/master/demo.html)
 
